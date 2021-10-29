@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Задание 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <img style="float:left; margin:10px; width:100px; height:100px;" src="enot.png" alt="Логотип енот"/>
+        <div id="hd_back"><h1><strong>Шапка сайта</strong></h1></div>
+        </div>
+        <div id="nav">
+        <div id="navt">
+            <a href="http://example.com/main" style="color: blanchedalmond;">Главная</a>
+            <a href="http://example.com/categories" style="color: blanchedalmond;">Категории</a>
+            <a href="http://example.com/help" style="color: blanchedalmond;">Помощь</a>
+        </div>
+        </div>
+        <div id="main"> 
+            <ol>
+           <a id="tut"> </a> 
+            <li><a href="http://example.com"> ссылка на главную страницу сайта example.com </a> </li>
+            <li><a href="https://example.com"> ссылка на главную страницу сайта example.com  в протоколе https</a> </li>
+            <li><a href="ftp://example.com/file.txt"> ссылка на файл на сервере FTP без авторизации </a> </li>
+            <li><a href="ftp://enot19:12de8f7@example.com/file.txt"> ссылка на файл на сервере FTP с авторизацией </a> </li>
+            <li><a href="http://example.com/#infa/"> ссылка на фрагмент страницы некоторого сайта </a> </li>
+            <li><a href="#tut"> ссылка на фрагмент текущей страницы </a> </li>
+            <li><a href="http://example.com?product=flowers&color=red"> ссылка с двумя параметрами в URL </a> </li>
+           <li><ul>
+                <li><a href="mathematics.html" title="Лекции по математике"> Математика </a> </li>   
+                <li><a href="history.html" title="Лекции по истории"> История </a> </li>
+                <li><a href="economy.html" title="Лекции по экономике"> Экономика </a> </li>
+            </ul></li> 
+            <li><a> ссылка без href </a> </li>
+            <li><a href="##"> ссылка с пустым href </a> </li>
+            <li><a href="http://example.com" rel="nofollow"> ссылка, по которой запрещен переход поисковикам </a> </li>
+            <li><a href="http://example.com" rel="noindex"> ссылка, запрещенная для индексации поисковиками </a> </li>
+            <li><p>Информацию можете посмотреть здесь<a href="http://example.com"> ссылка контекстная в тексте абзаца </a> </li>
+            <li>ссылка-изображение <a href="http://example.com" ><img src="пейзажи (638).png" alt="пейзаж" whidth="300" heigth="533"></a></li>
+            <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)<a><img src="пейзажи (639).png" alt="лес" whidth="533" heigth="300" usemap="#forest">  </a> </li>
+            <li><a href="Weather.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
+            <li><a href="about/vaccine.html"> относительная ссылка на страницу в каталоге about </a> </li>
+            <li><a href="../dresses.html"> относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+            <li><a href="../../clothes.html"> относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+            <li><a href="/news"> сокращенная ссылка на главную </a> </li>
+            <li><a href="Krasnodar"> сокращенная ссылка на внутреннюю </a> </li>
+        </ol>
+    </div>
+    <map name="forest">
+        <area shape="rect" coords="0,0,30,300" href="http://example.com" alt="ссылка"/>
+        <area shape="rect" coords="0,0,533,10" href="http://example.com" alt="ссылка"/>
+</map>
+<div id="tabl">
+    <table border="2" width="500px" valign="middle">
+     <tr>
+      <th>Продукты</th>
+      <th>Цена</th>
+      <th>Вес</th>
+    </tr>
+    <tr>
+          <td>Огурцы</td>
+          <td colspan="2">Нет в наличии</td>
+        </tr>
+    <tr>
+    <td>Бананы</td>
+    <td>80руб</td>
+    <td>1кг</td>
+    </tr>
+    <tr>
+    <td>Груши</td>
+    <td>56руб</td>
+    <td>500гр</td>
+    </tr>
+    <tr>
+    <td>Морковь</td>
+    <td>30руб</td>
+    <td>1кг</td>
+    </tr>
+    <tr>
+    <td>Лук</td>
+    <td>120руб</td>
+    <td>3кг</td>
+    </tr>
+    <tr>
+    <td>Апельсины</td>
+    <td colspan="2">Нет в наличии</td>
+        </tr>
+    </tr>
+    </table>   
+</div>
+<div id="form">
+    <form action="">
+            <p><strong>Имя:</strong></p>
+            <p><input name="username" placeholder="Евгений"></p> 
+            <p><strong>E-mail:</strong></p>
+            <p><input name="email" placeholder="anna54@mail.ru" type="email"></p>
+            <p><strong>Дата рождения:</strong></p>
+            <p><input name="birthday" type="date"></p>
+            <p><strong>Пол:</strong></p>
+            <p><input type="radio" name="gender" value="man">Мужской</p>
+            <p><input type="radio" name="gender" value="woman">Женский</p>
+            <p><strong>Количетсво конечностей:</strong></p>
+            <p><input type="radio" name="limbs" value="k0">Ноль</p>
+            <p><input type="radio" name="limbs" value="k1">Одна</p>
+            <p><input type="radio" name="limbs" value="k2">Две</p>
+            <p><input type="radio" name="limbs" value="k3">Три</p>
+            <p><input type="radio" name="limbs" value="k4">Четыре</p>
+            <p><input type="radio" name="limbs" value="k>4">Больше 4</p>
+            <p><strong>Сверхспособности:</strong></p>
+            <select name="super">
+                <option value="immortal">Бессмертие</option>
+                <option value="invisible">Прохождение сковзь стены</option>
+                <option value="levitation">Левитация</option>
+            </select>
+            <p><strong>Биография:</strong></p>
+            <p><textarea name="biography" placeholder="Это текст ничего не значит. Он просто присутствует в качестве примера, чтобы показать , что это многострочное текстовое поле." rows="5" cols="30" ></textarea></p>
+            <p><strong>С контрактом ознакомлен (а):</strong></p>
+            <p><input type="checkbox" name="contract" required>Соглашаюсь</p>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
+    </div>  
+    <div id="footer"><p>(c) Вельц Валентина 2021</p></div>  
+    </body>
+</html>

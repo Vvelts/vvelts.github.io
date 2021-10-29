@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задание 1</title>
+    </head>
+    <body>
+        <h1>Сверстать HTML-страницу с нумерованным списком гиперссылок и формой.</h1>
+        <ol>
+           <a id="tut"> </a> 
+            <li><a href="http://example.com"> ссылка на главную страницу сайта example.com </a> </li>
+            <li><a href="https://example.com"> ссылка на главную страницу сайта example.com  в протоколе https</a> </li>
+            <li><a href="ftp://example.com/file.txt"> ссылка на файл на сервере FTP без авторизации </a> </li>
+            <li><a href="ftp://enot19:12de8f7@example.com/file.txt"> ссылка на файл на сервере FTP с авторизацией </a> </li>
+            <li><a href="http://example.com/#infa/"> ссылка на фрагмент страницы некоторого сайта </a> </li>
+            <li><a href="#tut"> ссылка на фрагмент текущей страницы </a> </li>
+            <li><a href="http://example.com?product=flowers&color=red"> ссылка с двумя параметрами в URL </a> </li>
+           <li><ul>
+                <li><a href="mathematics.html" title="Лекции по математике"> Математика </a> </li>   
+                <li><a href="history.html" title="Лекции по истории"> История </a> </li>
+                <li><a href="economy.html" title="Лекции по экономике"> Экономика </a> </li>
+            </ul></li> 
+            <li><a> ссылка без href </a> </li>
+            <li><a href="##"> ссылка с пустым href </a> </li>
+            <li><a href="http://example.com" rel="nofollow"> ссылка, по которой запрещен переход поисковикам </a> </li>
+            <li><a href="http://example.com" rel="noindex"> ссылка, запрещенная для индексации поисковиками </a> </li>
+            <li><p>Информацию можете посмотреть здесь<a href="http://example.com"> ссылка контекстная в тексте абзаца </a> </li>
+            <li>ссылка-изображение <a href="http://example.com" ><img src="пейзажи (638).png" alt="пейзаж" whidth="129" heigth="98"></a></li>
+            <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)<a><img src="пейзажи (639).png" alt="лес" whidth="100" heigth="50" usemap="#forest"></a> </li>
+            <li><a href="Weather.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
+            <li><a href="about/vaccine.html"> относительная ссылка на страницу в каталоге about </a> </li>
+            <li><a href="../dresses.html"> относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+            <li><a href="../../clothes.html"> относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+            <li><a href="/news"> сокращенная ссылка на главную </a> </li>
+            <li><a href="Krasnodar"> сокращенная ссылка на внутреннюю </a> </li>
+        </ol>
+
+        <form action="">
+            <p><strong>Имя:</strong></p>
+            <p><input name="username" placeholder="Евгений"></p> 
+            <p><strong>E-mail:</strong></p>
+            <p><input name="email" placeholder="anna54@mail.ru" type="email"></p>
+            <p><strong>Дата рождения:</strong></p>
+            <p><input name="birthday" type="date"></p>
+            <p><strong>Пол:</strong></p>
+            <p><input type="radio" name="gender" value="man">Мужской</p>
+            <p><input type="radio" name="gender" value="woman">Женский</p>
+            <p><strong>Количетсво конечностей:</strong></p>
+            <p><input type="radio" name="limbs" value="k0">Ноль</p>
+            <p><input type="radio" name="limbs" value="k1">Одна</p>
+            <p><input type="radio" name="limbs" value="k2">Две</p>
+            <p><input type="radio" name="limbs" value="k3">Три</p>
+            <p><input type="radio" name="limbs" value="k4">Четыре</p>
+            <p><input type="radio" name="limbs" value="k>4">Больше 4</p>
+            <p><strong>Сверхспособности:</strong></p>
+            <select name="super">
+                <option value="immortal">Бессмертие</option>
+                <option value="invisible">Прохождение сковзь стены</option>
+                <option value="levitation">Левитация</option>
+            </select>
+            <p><strong>Биография:</strong></p>
+            <p><textarea name="biography" placeholder="Это текст ничего не значит. Он просто присутствует в качестве примера, чтобы показать , что это многострочное текстовое поле." rows="5" cols="30" ></textarea></p>
+            <p><strong>С контрактом ознакомлен (а):</strong></p>
+            <p><input type="checkbox" name="contract" required>Соглашаюсь</p>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+header {
+  background-color: #1c7919;
+}
+#logo{
+width: 100px;
+height: 100px;
+}
+#logotxt{
+color:#ffffff;}
+#navigation{
+margin: 0;
+padding: 0;
+background-color:#70db82;}
+#nch{background-color:#18fa89;}
+#ch{background-color:#458154}
+main{
+background-color:#7be09d;}
+form{ order:0;background-color:#68eb8f;}
+table{ order:1;}
+footer{background-color:#1c7919;color:#ffffff;}
