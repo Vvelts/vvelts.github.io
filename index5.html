@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-<html>
-		<head>
-		<meta charset="UTF-8">
-		<title>Задание 5</title>
-		<link rel="stylesheet" type="text/css" href="style5.css"> 
-		</head>
+
+<head>
+  <title>Задание 5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="stylesheet" href="style5.css">
+</head>
+
 <body>
-	<form><div id="main">
-		<fieldset>
-		<h1>Калькулятор стоймости заказа</h1>
-		<label>Количество товара:<br><input type="text" id="k" placeholder="0"></br></label>
-		<label>Цена товара:<br><input type="text" id="s" placeholder="0"></br></label>
-		<p><input type="button" value="Расчитать" id="knopka" onClick="st();"></p>
-		</fieldset></div>
-	</form>
-<br><p>Итого:</p></br>
-<div id="res"></div>
-<script src="JavaScript.js" defer></script>
+  <div id="main">
+    <div id="calculator-form">
+      <form>
+        <div id="prodcut-price" class="container">
+          <label>Цена товара:</label>
+          <input type="text" name="product-price" placeholder="10$">
+        </div>
+        <div id="product-amount" class="container">
+          <label>Количество товара:</label>
+          <input type="text" name="product-amount" placeholder="5">
+        </div>
+       <div id="result" class="container"></div>
+        <div>
+          <input type="button" value="Рассчитать" id="calculate-button" onclick="calculate();">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="JavaScript.js" defer></script>
 </body>
+
 </html>
